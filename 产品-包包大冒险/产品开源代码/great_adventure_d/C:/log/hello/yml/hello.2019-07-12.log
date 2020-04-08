@@ -1,0 +1,1125 @@
+2019-07-12 15:44:35  INFO [cn.xiaoandx.GreatAdventureWebApp]:50 - Starting GreatAdventureWebApp on liu with PID 10815 (started by liu in /Users/liu/Desktop/产品开发计划与源码/产品-包包大冒险/产品开源代码/great_adventure_d)
+2019-07-12 15:44:35 DEBUG [cn.xiaoandx.GreatAdventureWebApp]:53 - Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2019-07-12 15:44:35  INFO [cn.xiaoandx.GreatAdventureWebApp]:652 - No active profile set, falling back to default profiles: default
+2019-07-12 15:44:35  INFO [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext]:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4051f6df: startup date [Fri Jul 12 15:44:35 CST 2019]; root of context hierarchy
+2019-07-12 15:44:36  INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory]:824 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-07-12 15:44:37  INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$574c7c6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-12 15:44:37  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]:91 - Tomcat initialized with port(s): 8080 (http)
+2019-07-12 15:44:37  INFO [org.apache.catalina.core.StandardService]:180 - Starting service [Tomcat]
+2019-07-12 15:44:37  INFO [org.apache.catalina.core.StandardEngine]:180 - Starting Servlet Engine: Apache Tomcat/8.5.28
+2019-07-12 15:44:37  INFO [org.apache.catalina.core.AprLifecycleListener]:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/liu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-12 15:44:38  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]]:180 - Initializing Spring embedded WebApplicationContext
+2019-07-12 15:44:38  INFO [org.springframework.web.context.ContextLoader]:285 - Root WebApplicationContext: initialization completed in 2794 ms
+2019-07-12 15:44:38  INFO [org.springframework.boot.web.servlet.ServletRegistrationBean]:185 - Servlet dispatcherServlet mapped to [/]
+2019-07-12 15:44:38  INFO [org.springframework.boot.web.servlet.FilterRegistrationBean]:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-12 15:44:38  INFO [org.springframework.boot.web.servlet.FilterRegistrationBean]:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-12 15:44:38  INFO [org.springframework.boot.web.servlet.FilterRegistrationBean]:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-12 15:44:38  INFO [org.springframework.boot.web.servlet.FilterRegistrationBean]:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/participant/addPartner],methods=[POST],produces=[application/json]}" onto public cn.xiaoandx.user.vo.OperationalStatusVO cn.xiaoandx.user.controller.ParticipantController.addPartner(cn.xiaoandx.user.vo.PartnerVO)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/],methods=[POST],produces=[application/json]}" onto public cn.xiaoandx.user.entity.User cn.xiaoandx.user.controller.UserController.get(cn.xiaoandx.user.vo.WUserVO)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getPartner/{userId}],methods=[GET],produces=[application/json]}" onto public cn.xiaoandx.user.vo.TotalTasks cn.xiaoandx.user.controller.UserController.getPartner(java.lang.Long)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getToken],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.String> cn.xiaoandx.user.controller.UserController.getToken()
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getTask/{userId}],methods=[GET],produces=[application/json]}" onto public java.util.List<cn.xiaoandx.user.entity.Task> cn.xiaoandx.user.controller.UserController.getTask(java.lang.Long)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/addTask],methods=[POST],produces=[application/json]}" onto public cn.xiaoandx.user.vo.OperationalStatusVO cn.xiaoandx.user.controller.UserController.addTask(cn.xiaoandx.user.vo.TaskVO)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/findUserById/{user_id}],methods=[GET],produces=[application/json]}" onto public cn.xiaoandx.user.entity.User cn.xiaoandx.user.controller.UserController.findUserById(int)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/findDeal/{user_id}],methods=[GET],produces=[application/json]}" onto public java.util.List<cn.xiaoandx.user.entity.Deal> cn.xiaoandx.user.controller.UserController.findDealByUserId(java.lang.Integer)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/findDealByUserIdPage],methods=[POST],produces=[application/json]}" onto public cn.xiaoandx.user.vo.DealPageSaVO cn.xiaoandx.user.controller.UserController.findDealByUserIdPage(cn.xiaoandx.user.vo.DealPageVO)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getTasksPublished/{userId}],methods=[GET],produces=[application/json]}" onto public cn.xiaoandx.user.vo.TotalTasks cn.xiaoandx.user.controller.UserController.getTasksPublished(java.lang.Long)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getPartnerList/{userId}],methods=[GET],produces=[application/json]}" onto public java.util.List<cn.xiaoandx.user.entity.Partner> cn.xiaoandx.user.controller.UserController.getPartnerList(java.lang.Long)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getOneTask/{taskId}],methods=[POST],produces=[application/json]}" onto public cn.xiaoandx.user.entity.Task cn.xiaoandx.user.controller.UserController.getOneTask(java.lang.Long)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getPartnerExamine/{taskId}],methods=[GET],produces=[application/json]}" onto public java.util.List<cn.xiaoandx.user.vo.PartnerList> cn.xiaoandx.user.controller.UserController.getPartnerExamine(java.lang.Long)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/toExamine],methods=[POST],produces=[application/json]}" onto public java.lang.Double cn.xiaoandx.user.controller.UserController.toExamine(cn.xiaoandx.user.vo.ToExamine)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/pantner],methods=[GET],produces=[application/json]}" onto public cn.xiaoandx.user.entity.Partner cn.xiaoandx.user.controller.UserController.partner(java.lang.Long,java.lang.Long)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-12 15:44:39  INFO [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping]:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-12 15:44:39  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4051f6df: startup date [Fri Jul 12 15:44:35 CST 2019]; root of context hierarchy
+2019-07-12 15:44:40  INFO [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-12 15:44:40  INFO [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-12 15:44:40  INFO [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:289 - Detected @ExceptionHandler methods in exceptionHandle
+2019-07-12 15:44:40  INFO [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-12 15:44:40  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]:57 - LiveReload server is running on port 35729
+2019-07-12 15:44:40  INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter]:434 - Registering beans for JMX exposure on startup
+2019-07-12 15:44:40  INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter]:896 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-12 15:44:40  INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter]:669 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-07-12 15:44:40  INFO [org.springframework.context.support.DefaultLifecycleProcessor]:351 - Starting beans in phase 2147483647
+2019-07-12 15:44:40  INFO [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper]:151 - Context refreshed
+2019-07-12 15:44:40  INFO [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper]:154 - Found 2 custom documentation plugin(s)
+2019-07-12 15:44:40  INFO [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner]:41 - Scanning for api listing references
+2019-07-12 15:44:40  INFO [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner]:41 - Scanning for api listing references
+2019-07-12 15:44:40  INFO [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]:275 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-07-12 15:44:40  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]:205 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-12 15:44:40  INFO [cn.xiaoandx.GreatAdventureWebApp]:59 - Started GreatAdventureWebApp in 7.358 seconds (JVM running for 12.41)
+2019-07-12 15:44:50  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-12 15:44:50  INFO [org.springframework.web.servlet.DispatcherServlet]:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-12 15:44:50  INFO [org.springframework.web.servlet.DispatcherServlet]:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2019-07-12 15:50:00  INFO [com.zaxxer.hikari.HikariDataSource]:110 - HikariPool-1 - Starting...
+2019-07-12 15:50:00  INFO [com.zaxxer.hikari.HikariDataSource]:123 - HikariPool-1 - Start completed.
+2019-07-12 15:50:00  INFO [cn.xiaoandx.commons.utils.TimingRed]:97 - list task is null by xiaoandx
+2019-07-12 15:53:27  WARN [cn.xiaoandx.commons.utils.GetWeChatOpenId]:70 - 获取OpenId失败，code:023qDbFb2yoK3M0fQjCb2XJwFb2qDbFl,errcode:40029, errmsg:invalid code, hints: [ req_id: 0hFdzzyFe-JtyENA ]
+2019-07-12 15:53:27 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController get Params[[WUserVO(code=023qDbFb2yoK3M0fQjCb2XJwFb2qDbFl, head_portrait=https://wx.qlogo.cn/mmopen/vi_32/k0orkm0l0j5hicPKadRzcVYwnKgaYphrcN7sKmMRMK5ibYVYKMqOEEBqaQ0CRDUmsUFVY6m1Pibs2g1VDUF3Kl11g/132, nickname=L.)]] Response[null] speed time:[3243]ms
+2019-07-12 15:54:02  WARN [cn.xiaoandx.commons.utils.GetWeChatOpenId]:70 - 获取OpenId失败，code:033gioPf2tccdH0KrPQf2nMAPf2gioPn,errcode:40029, errmsg:invalid code, hints: [ req_id: 1hFdm44ce-VNWyEA ]
+2019-07-12 15:54:02 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController get Params[[WUserVO(code=033gioPf2tccdH0KrPQf2nMAPf2gioPn, head_portrait=https://wx.qlogo.cn/mmopen/vi_32/k0orkm0l0j5hicPKadRzcVYwnKgaYphrcN7sKmMRMK5ibYVYKMqOEEBqaQ0CRDUmsUFVY6m1Pibs2g1VDUF3Kl11g/132, nickname=L.)]] Response[null] speed time:[407]ms
+2019-07-12 15:54:29  WARN [cn.xiaoandx.commons.exception.ExceptionHandle]:103 - TypeMismatchException:{}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "undefined"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:210)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:99)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:52)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:692)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:123)
+	... 52 common frames omitted
+2019-07-12 15:54:29  WARN [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:193 - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2019-07-12 15:54:34  WARN [cn.xiaoandx.commons.exception.ExceptionHandle]:103 - TypeMismatchException:{}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "NaN"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:213)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:99)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:52)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:692)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:123)
+	... 52 common frames omitted
+2019-07-12 15:54:34  WARN [cn.xiaoandx.commons.exception.ExceptionHandle]:103 - TypeMismatchException:{}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "NaN"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:213)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:99)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:52)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:692)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:123)
+	... 52 common frames omitted
+2019-07-12 15:54:34  WARN [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:193 - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+2019-07-12 15:54:34  WARN [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:193 - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+2019-07-12 15:54:34  WARN [cn.xiaoandx.commons.exception.ExceptionHandle]:103 - TypeMismatchException:{}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "NaN"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:213)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:99)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:52)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:692)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:123)
+	... 52 common frames omitted
+2019-07-12 15:54:34  WARN [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:193 - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+2019-07-12 15:54:34  WARN [cn.xiaoandx.commons.exception.ExceptionHandle]:103 - TypeMismatchException:{}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "NaN"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:213)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:99)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:52)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:692)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:123)
+	... 52 common frames omitted
+2019-07-12 15:54:34  WARN [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:193 - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+2019-07-12 15:54:36  WARN [cn.xiaoandx.commons.exception.ExceptionHandle]:103 - TypeMismatchException:{}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "undefined"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:210)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:99)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:52)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:692)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:123)
+	... 52 common frames omitted
+2019-07-12 15:54:36  WARN [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:193 - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2019-07-12 15:54:45  WARN [cn.xiaoandx.commons.exception.ExceptionHandle]:103 - TypeMismatchException:{}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "undefined"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:210)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:99)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:52)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:692)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:123)
+	... 52 common frames omitted
+2019-07-12 15:54:45  WARN [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:193 - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2019-07-12 15:55:24  WARN [cn.xiaoandx.commons.utils.GetWeChatOpenId]:70 - 获取OpenId失败，code:023iGspW134TB01bStoW1y7kpW1iGspl,errcode:40029, errmsg:invalid code, hints: [ req_id: 2hFd46aLRa-DL5idA ]
+2019-07-12 15:55:24 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController get Params[[WUserVO(code=023iGspW134TB01bStoW1y7kpW1iGspl, head_portrait=https://wx.qlogo.cn/mmopen/vi_32/k0orkm0l0j5hicPKadRzcVYwnKgaYphrcN7sKmMRMK5ibYVYKMqOEEBqaQ0CRDUmsUFVY6m1Pibs2g1VDUF3Kl11g/132, nickname=L.)]] Response[null] speed time:[2867]ms
+2019-07-12 15:55:33  WARN [cn.xiaoandx.commons.exception.ExceptionHandle]:103 - TypeMismatchException:{}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "NaN"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:213)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:99)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:52)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:692)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:123)
+	... 52 common frames omitted
+2019-07-12 15:55:33  WARN [cn.xiaoandx.commons.exception.ExceptionHandle]:103 - TypeMismatchException:{}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "NaN"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:213)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:99)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:52)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:692)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:123)
+	... 52 common frames omitted
+2019-07-12 15:55:33  WARN [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:193 - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+2019-07-12 15:55:33  WARN [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:193 - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+2019-07-12 15:55:33  WARN [cn.xiaoandx.commons.exception.ExceptionHandle]:103 - TypeMismatchException:{}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "NaN"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:213)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:99)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:52)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:692)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:123)
+	... 52 common frames omitted
+2019-07-12 15:55:33  WARN [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:193 - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+2019-07-12 15:55:33  WARN [cn.xiaoandx.commons.exception.ExceptionHandle]:103 - TypeMismatchException:{}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "NaN"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:213)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:99)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:52)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:692)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:123)
+	... 52 common frames omitted
+2019-07-12 15:55:33  WARN [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:193 - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "NaN"
+2019-07-12 15:55:34  WARN [cn.xiaoandx.commons.exception.ExceptionHandle]:103 - TypeMismatchException:{}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "undefined"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:210)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:99)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:52)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:692)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:123)
+	... 52 common frames omitted
+2019-07-12 15:55:34  WARN [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:193 - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2019-07-12 15:57:22  WARN [cn.xiaoandx.commons.utils.GetWeChatOpenId]:70 - 获取OpenId失败，code:043WP60f1Rrxaz0KGZ0f1OUPZe1WP60Z,errcode:40029, errmsg:invalid code, hints: [ req_id: 4hFdWqLnRa-EuThiA ]
+2019-07-12 15:57:22 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController get Params[[WUserVO(code=043WP60f1Rrxaz0KGZ0f1OUPZe1WP60Z, head_portrait=https://wx.qlogo.cn/mmopen/vi_32/k0orkm0l0j5hicPKadRzcVYwnKgaYphrcN7sKmMRMK5ibYVYKMqOEEBqaQ0CRDUmsUFVY6m1Pibs2g1VDUF3Kl11g/132, nickname=L.)]] Response[null] speed time:[2843]ms
+2019-07-12 16:00:00  INFO [cn.xiaoandx.commons.utils.TimingRed]:97 - list task is null by xiaoandx
+2019-07-12 16:03:33  INFO [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext]:989 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4051f6df: startup date [Fri Jul 12 15:44:35 CST 2019]; root of context hierarchy
+2019-07-12 16:03:33  INFO [org.springframework.context.support.DefaultLifecycleProcessor]:366 - Stopping beans in phase 2147483647
+2019-07-12 16:03:33  INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter]:452 - Unregistering JMX-exposed beans on shutdown
+2019-07-12 16:03:33  INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter]:183 - Unregistering JMX-exposed beans
+2019-07-12 16:03:33  INFO [com.zaxxer.hikari.HikariDataSource]:381 - HikariPool-1 - Shutdown initiated...
+2019-07-12 16:03:33  INFO [com.zaxxer.hikari.HikariDataSource]:383 - HikariPool-1 - Shutdown completed.
+2019-07-12 16:03:37  INFO [cn.xiaoandx.GreatAdventureWebApp]:50 - Starting GreatAdventureWebApp on liu with PID 10815 (started by liu in /Users/liu/Desktop/产品开发计划与源码/产品-包包大冒险/产品开源代码/great_adventure_d)
+2019-07-12 16:03:37 DEBUG [cn.xiaoandx.GreatAdventureWebApp]:53 - Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2019-07-12 16:03:37  INFO [cn.xiaoandx.GreatAdventureWebApp]:652 - No active profile set, falling back to default profiles: default
+2019-07-12 16:03:37  INFO [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext]:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@76676c3e: startup date [Fri Jul 12 16:03:37 CST 2019]; root of context hierarchy
+2019-07-12 16:03:38  INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory]:824 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-07-12 16:03:38  INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$574c7c6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-12 16:03:53  INFO [cn.xiaoandx.GreatAdventureWebApp]:50 - Starting GreatAdventureWebApp on liu with PID 11592 (started by liu in /Users/liu/Desktop/产品开发计划与源码/产品-包包大冒险/产品开源代码/great_adventure_d)
+2019-07-12 16:03:53 DEBUG [cn.xiaoandx.GreatAdventureWebApp]:53 - Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2019-07-12 16:03:53  INFO [cn.xiaoandx.GreatAdventureWebApp]:652 - No active profile set, falling back to default profiles: default
+2019-07-12 16:03:53  INFO [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext]:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f8b8340: startup date [Fri Jul 12 16:03:53 CST 2019]; root of context hierarchy
+2019-07-12 16:03:54  INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory]:824 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-07-12 16:03:54  INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a6d9661] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-12 16:03:55  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]:91 - Tomcat initialized with port(s): 8080 (http)
+2019-07-12 16:03:55  INFO [org.apache.catalina.core.StandardService]:180 - Starting service [Tomcat]
+2019-07-12 16:03:55  INFO [org.apache.catalina.core.StandardEngine]:180 - Starting Servlet Engine: Apache Tomcat/8.5.28
+2019-07-12 16:03:55  INFO [org.apache.catalina.core.AprLifecycleListener]:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/liu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-12 16:03:55  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]]:180 - Initializing Spring embedded WebApplicationContext
+2019-07-12 16:03:55  INFO [org.springframework.web.context.ContextLoader]:285 - Root WebApplicationContext: initialization completed in 2733 ms
+2019-07-12 16:03:56  INFO [org.springframework.boot.web.servlet.ServletRegistrationBean]:185 - Servlet dispatcherServlet mapped to [/]
+2019-07-12 16:03:56  INFO [org.springframework.boot.web.servlet.FilterRegistrationBean]:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-12 16:03:56  INFO [org.springframework.boot.web.servlet.FilterRegistrationBean]:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-12 16:03:56  INFO [org.springframework.boot.web.servlet.FilterRegistrationBean]:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-12 16:03:56  INFO [org.springframework.boot.web.servlet.FilterRegistrationBean]:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-12 16:03:56  WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext]:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'qinliu.accessKey' in value "${qinliu.accessKey}"
+2019-07-12 16:03:56  INFO [org.apache.catalina.core.StandardService]:180 - Stopping service [Tomcat]
+2019-07-12 16:03:56  INFO [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener]:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-12 16:03:56 ERROR [org.springframework.boot.SpringApplication]:833 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'qinliu.accessKey' in value "${qinliu.accessKey}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at cn.xiaoandx.GreatAdventureWebApp.main(GreatAdventureWebApp.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'qinliu.accessKey' in value "${qinliu.accessKey}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:379)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'qinliu.accessKey' in value "${qinliu.accessKey}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:834)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	... 35 common frames omitted
+2019-07-12 16:14:47  INFO [cn.xiaoandx.GreatAdventureWebApp]:50 - Starting GreatAdventureWebApp on liu with PID 11915 (started by liu in /Users/liu/Desktop/产品开发计划与源码/产品-包包大冒险/产品开源代码/great_adventure_d)
+2019-07-12 16:14:47 DEBUG [cn.xiaoandx.GreatAdventureWebApp]:53 - Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2019-07-12 16:14:47  INFO [cn.xiaoandx.GreatAdventureWebApp]:652 - No active profile set, falling back to default profiles: default
+2019-07-12 16:14:47  INFO [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext]:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d9a91: startup date [Fri Jul 12 16:14:47 CST 2019]; root of context hierarchy
+2019-07-12 16:14:48  INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory]:824 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-07-12 16:14:49  INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a2b26ce6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-12 16:14:49  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]:91 - Tomcat initialized with port(s): 8080 (http)
+2019-07-12 16:14:49  INFO [org.apache.catalina.core.StandardService]:180 - Starting service [Tomcat]
+2019-07-12 16:14:49  INFO [org.apache.catalina.core.StandardEngine]:180 - Starting Servlet Engine: Apache Tomcat/8.5.28
+2019-07-12 16:14:49  INFO [org.apache.catalina.core.AprLifecycleListener]:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/liu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-12 16:14:49  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]]:180 - Initializing Spring embedded WebApplicationContext
+2019-07-12 16:14:49  INFO [org.springframework.web.context.ContextLoader]:285 - Root WebApplicationContext: initialization completed in 2410 ms
+2019-07-12 16:14:50  INFO [org.springframework.boot.web.servlet.ServletRegistrationBean]:185 - Servlet dispatcherServlet mapped to [/]
+2019-07-12 16:14:50  INFO [org.springframework.boot.web.servlet.FilterRegistrationBean]:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-12 16:14:50  INFO [org.springframework.boot.web.servlet.FilterRegistrationBean]:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-12 16:14:50  INFO [org.springframework.boot.web.servlet.FilterRegistrationBean]:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-12 16:14:50  INFO [org.springframework.boot.web.servlet.FilterRegistrationBean]:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/participant/addPartner],methods=[POST],produces=[application/json]}" onto public cn.xiaoandx.user.vo.OperationalStatusVO cn.xiaoandx.user.controller.ParticipantController.addPartner(cn.xiaoandx.user.vo.PartnerVO)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/],methods=[POST],produces=[application/json]}" onto public cn.xiaoandx.user.entity.User cn.xiaoandx.user.controller.UserController.get(cn.xiaoandx.user.vo.WUserVO)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/addTask],methods=[POST],produces=[application/json]}" onto public cn.xiaoandx.user.vo.OperationalStatusVO cn.xiaoandx.user.controller.UserController.addTask(cn.xiaoandx.user.vo.TaskVO)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getPartner/{userId}],methods=[GET],produces=[application/json]}" onto public cn.xiaoandx.user.vo.TotalTasks cn.xiaoandx.user.controller.UserController.getPartner(java.lang.Long)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/findUserById/{user_id}],methods=[GET],produces=[application/json]}" onto public cn.xiaoandx.user.entity.User cn.xiaoandx.user.controller.UserController.findUserById(int)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/findDeal/{user_id}],methods=[GET],produces=[application/json]}" onto public java.util.List<cn.xiaoandx.user.entity.Deal> cn.xiaoandx.user.controller.UserController.findDealByUserId(java.lang.Integer)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/findDealByUserIdPage],methods=[POST],produces=[application/json]}" onto public cn.xiaoandx.user.vo.DealPageSaVO cn.xiaoandx.user.controller.UserController.findDealByUserIdPage(cn.xiaoandx.user.vo.DealPageVO)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getTasksPublished/{userId}],methods=[GET],produces=[application/json]}" onto public cn.xiaoandx.user.vo.TotalTasks cn.xiaoandx.user.controller.UserController.getTasksPublished(java.lang.Long)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getPartnerList/{userId}],methods=[GET],produces=[application/json]}" onto public java.util.List<cn.xiaoandx.user.entity.Partner> cn.xiaoandx.user.controller.UserController.getPartnerList(java.lang.Long)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getOneTask/{taskId}],methods=[POST],produces=[application/json]}" onto public cn.xiaoandx.user.entity.Task cn.xiaoandx.user.controller.UserController.getOneTask(java.lang.Long)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getPartnerExamine/{taskId}],methods=[GET],produces=[application/json]}" onto public java.util.List<cn.xiaoandx.user.vo.PartnerList> cn.xiaoandx.user.controller.UserController.getPartnerExamine(java.lang.Long)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/toExamine],methods=[POST],produces=[application/json]}" onto public java.lang.Double cn.xiaoandx.user.controller.UserController.toExamine(cn.xiaoandx.user.vo.ToExamine)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/pantner],methods=[GET],produces=[application/json]}" onto public cn.xiaoandx.user.entity.Partner cn.xiaoandx.user.controller.UserController.partner(java.lang.Long,java.lang.Long)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/v1/open/task/getTask/{userId}],methods=[GET],produces=[application/json]}" onto public java.util.List<cn.xiaoandx.user.entity.Task> cn.xiaoandx.user.controller.UserController.getTask(java.lang.Long)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-12 16:14:50  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-12 16:14:51  INFO [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping]:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-07-12 16:14:51  INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d9a91: startup date [Fri Jul 12 16:14:47 CST 2019]; root of context hierarchy
+2019-07-12 16:14:51  INFO [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-12 16:14:51  INFO [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-12 16:14:51  INFO [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]:289 - Detected @ExceptionHandler methods in exceptionHandle
+2019-07-12 16:14:51  INFO [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-12 16:14:52  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]:57 - LiveReload server is running on port 35729
+2019-07-12 16:14:52  INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter]:434 - Registering beans for JMX exposure on startup
+2019-07-12 16:14:52  INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter]:896 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-12 16:14:52  INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter]:669 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-07-12 16:14:52  INFO [org.springframework.context.support.DefaultLifecycleProcessor]:351 - Starting beans in phase 2147483647
+2019-07-12 16:14:52  INFO [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper]:151 - Context refreshed
+2019-07-12 16:14:52  INFO [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper]:154 - Found 2 custom documentation plugin(s)
+2019-07-12 16:14:52  INFO [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner]:41 - Scanning for api listing references
+2019-07-12 16:14:52  INFO [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner]:41 - Scanning for api listing references
+2019-07-12 16:14:52  INFO [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]:275 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-07-12 16:14:52  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]:205 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-12 16:14:52  INFO [cn.xiaoandx.GreatAdventureWebApp]:59 - Started GreatAdventureWebApp in 6.553 seconds (JVM running for 10.67)
+2019-07-12 16:15:13  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-12 16:15:13  INFO [org.springframework.web.servlet.DispatcherServlet]:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-12 16:15:13  INFO [org.springframework.web.servlet.DispatcherServlet]:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2019-07-12 16:15:13  INFO [com.zaxxer.hikari.HikariDataSource]:110 - HikariPool-1 - Starting...
+2019-07-12 16:15:14  INFO [com.zaxxer.hikari.HikariDataSource]:123 - HikariPool-1 - Start completed.
+2019-07-12 16:15:17  INFO [cn.xiaoandx.user.dao.UserDao]:71 - ==========注册用户========1
+2019-07-12 16:15:17  INFO [cn.xiaoandx.user.service.UserService]:90 - 注册用户成功
+2019-07-12 16:15:17 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController get Params[[WUserVO(code=023nCUHX1RzhqZ0WpfKX1J3ZHX1nCUHK, head_portrait=https://wx.qlogo.cn/mmopen/vi_32/k8L4weNAaOicehicc7H03SN6W2OFIvpVCKhAHAWJq0LBbUuibRUpbdcT8nzlpP1hK5o3eKo1oKHtSxx2UNlryCxOA/132, nickname=L.)]] Response[User(user_id=5, open_id=null, overage=200.0, nickname=L., head_portrait=https://wx.qlogo.cn/mmopen/vi_32/k8L4weNAaOicehicc7H03SN6W2OFIvpVCKhAHAWJq0LBbUuibRUpbdcT8nzlpP1hK5o3eKo1oKHtSxx2UNlryCxOA/132)] speed time:[3559]ms
+2019-07-12 16:15:33 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[5]] Response[User(user_id=5, open_id=null, overage=200.0, nickname=null, head_portrait=null)] speed time:[4]ms
+2019-07-12 16:17:20 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[5]] Response[User(user_id=5, open_id=null, overage=200.0, nickname=null, head_portrait=null)] speed time:[4]ms
+2019-07-12 16:17:34 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[5]] Response[User(user_id=5, open_id=null, overage=200.0, nickname=null, head_portrait=null)] speed time:[4]ms
+2019-07-12 16:17:42 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController addTask Params[[TaskVO(user_id=5, claim=111, total_bounty=1.0, total_red=1, total_partner=1)]] Response[OperationalStatusVO(statusCodeORTaskId=93, statusMassger=success , Above attributes is task_id)] speed time:[83]ms
+2019-07-12 16:17:43 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getOneTask Params[[93]] Response[Task(task_id=93, user_id=5, status=发布成功, claim=111, bounty=1.0, total_bounty=1.0, red=0, total_red=1, partner=0, total_partner=1, time=2019-07-12 16:17:43.0)] speed time:[4]ms
+2019-07-12 16:17:43 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerExamine Params[[93]] Response[[]] speed time:[3]ms
+2019-07-12 16:20:16 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[5]] Response[User(user_id=5, open_id=null, overage=199.0, nickname=null, head_portrait=null)] speed time:[6]ms
+2019-07-12 16:20:19 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getTask Params[[5]] Response[[Task(task_id=93, user_id=5, status=发布成功, claim=111, bounty=1.0, total_bounty=1.0, red=0, total_red=1, partner=0, total_partner=1, time=2019-07-12 16:17:43.0)]] speed time:[10]ms
+2019-07-12 16:20:19 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getTask Params[[5]] Response[[Task(task_id=93, user_id=5, status=发布成功, claim=111, bounty=1.0, total_bounty=1.0, red=0, total_red=1, partner=0, total_partner=1, time=2019-07-12 16:17:43.0)]] speed time:[2]ms
+2019-07-12 16:20:19 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerList Params[[5]] Response[[]] speed time:[4]ms
+2019-07-12 16:20:19 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerList Params[[5]] Response[[]] speed time:[2]ms
+2019-07-12 16:20:21 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getOneTask Params[[93]] Response[Task(task_id=93, user_id=5, status=发布成功, claim=111, bounty=1.0, total_bounty=1.0, red=0, total_red=1, partner=0, total_partner=1, time=2019-07-12 16:17:43.0)] speed time:[6]ms
+2019-07-12 16:20:21 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerExamine Params[[93]] Response[[]] speed time:[7]ms
+2019-07-12 16:20:23 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getTask Params[[5]] Response[[Task(task_id=93, user_id=5, status=发布成功, claim=111, bounty=1.0, total_bounty=1.0, red=0, total_red=1, partner=0, total_partner=1, time=2019-07-12 16:17:43.0)]] speed time:[3]ms
+2019-07-12 16:20:23 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerList Params[[5]] Response[[]] speed time:[4]ms
+2019-07-12 16:20:25 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[5]] Response[User(user_id=5, open_id=null, overage=199.0, nickname=null, head_portrait=null)] speed time:[7]ms
+2019-07-12 16:22:01 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController get Params[[WUserVO(code=023UU5S50SsZVB1kfnR50o9oS50UU5SC, head_portrait=https://wx.qlogo.cn/mmopen/vi_32/k8L4weNAaOicehicc7H03SN6W2OFIvpVCKhAHAWJq0LBbUuibRUpbdcT8nzlpP1hK5o3eKo1oKHtSxx2UNlryCxOA/132, nickname=L.)]] Response[User(user_id=5, open_id=null, overage=199.0, nickname=L., head_portrait=https://wx.qlogo.cn/mmopen/vi_32/k8L4weNAaOicehicc7H03SN6W2OFIvpVCKhAHAWJq0LBbUuibRUpbdcT8nzlpP1hK5o3eKo1oKHtSxx2UNlryCxOA/132)] speed time:[2814]ms
+2019-07-12 16:23:32 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController get Params[[WUserVO(code=0430oUHb04cTeB12JXDb0URRHb00oUHB, head_portrait=https://wx.qlogo.cn/mmopen/vi_32/k8L4weNAaOicehicc7H03SN6W2OFIvpVCKhAHAWJq0LBbUuibRUpbdcT8nzlpP1hK5o3eKo1oKHtSxx2UNlryCxOA/132, nickname=L.)]] Response[User(user_id=5, open_id=null, overage=199.0, nickname=L., head_portrait=https://wx.qlogo.cn/mmopen/vi_32/k8L4weNAaOicehicc7H03SN6W2OFIvpVCKhAHAWJq0LBbUuibRUpbdcT8nzlpP1hK5o3eKo1oKHtSxx2UNlryCxOA/132)] speed time:[3201]ms
+2019-07-12 16:23:35 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[5]] Response[User(user_id=5, open_id=null, overage=199.0, nickname=null, head_portrait=null)] speed time:[4]ms
+2019-07-12 16:23:37 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getTask Params[[5]] Response[[Task(task_id=93, user_id=5, status=发布成功, claim=111, bounty=1.0, total_bounty=1.0, red=0, total_red=1, partner=0, total_partner=1, time=2019-07-12 16:17:43.0)]] speed time:[9]ms
+2019-07-12 16:23:37 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getTask Params[[5]] Response[[Task(task_id=93, user_id=5, status=发布成功, claim=111, bounty=1.0, total_bounty=1.0, red=0, total_red=1, partner=0, total_partner=1, time=2019-07-12 16:17:43.0)]] speed time:[12]ms
+2019-07-12 16:23:37 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerList Params[[5]] Response[[]] speed time:[2]ms
+2019-07-12 16:23:37 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerList Params[[5]] Response[[]] speed time:[2]ms
+2019-07-12 16:26:03  INFO [cn.xiaoandx.user.dao.UserDao]:71 - ==========注册用户========1
+2019-07-12 16:26:04  INFO [cn.xiaoandx.user.service.UserService]:90 - 注册用户成功
+2019-07-12 16:26:04 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController get Params[[WUserVO(code=043eAOeA13Z4gd078BdA1zgzeA1eAOeI, head_portrait=https://wx.qlogo.cn/mmopen/vi_32/z4Az5l1QkBDGuBPZaibj5zveJr2D66CPstPPhnIwsd2ibAr3aQN2aZWnibAFNuqswqNDXjSqh5WxJzumywz16AiczA/132, nickname=Y.)]] Response[User(user_id=6, open_id=null, overage=200.0, nickname=Y., head_portrait=https://wx.qlogo.cn/mmopen/vi_32/z4Az5l1QkBDGuBPZaibj5zveJr2D66CPstPPhnIwsd2ibAr3aQN2aZWnibAFNuqswqNDXjSqh5WxJzumywz16AiczA/132)] speed time:[3169]ms
+2019-07-12 16:26:04 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController get Params[[WUserVO(code=023esYo31dtvkQ1VSqq31Xrbp31esYo8, head_portrait=https://wx.qlogo.cn/mmopen/vi_32/z4Az5l1QkBDGuBPZaibj5zveJr2D66CPstPPhnIwsd2ibAr3aQN2aZWnibAFNuqswqNDXjSqh5WxJzumywz16AiczA/132, nickname=Y.)]] Response[User(user_id=6, open_id=null, overage=200.0, nickname=Y., head_portrait=https://wx.qlogo.cn/mmopen/vi_32/z4Az5l1QkBDGuBPZaibj5zveJr2D66CPstPPhnIwsd2ibAr3aQN2aZWnibAFNuqswqNDXjSqh5WxJzumywz16AiczA/132)] speed time:[1817]ms
+2019-07-12 16:26:07 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[6]] Response[User(user_id=6, open_id=null, overage=200.0, nickname=null, head_portrait=null)] speed time:[3]ms
+2019-07-12 16:26:09 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getTask Params[[6]] Response[[]] speed time:[3]ms
+2019-07-12 16:26:09 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getTask Params[[6]] Response[[]] speed time:[4]ms
+2019-07-12 16:26:09 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerList Params[[6]] Response[[]] speed time:[4]ms
+2019-07-12 16:26:09 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerList Params[[6]] Response[[]] speed time:[3]ms
+2019-07-12 16:26:20 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[6]] Response[User(user_id=6, open_id=null, overage=200.0, nickname=null, head_portrait=null)] speed time:[2]ms
+2019-07-12 16:26:22 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getTask Params[[6]] Response[[]] speed time:[2]ms
+2019-07-12 16:26:22 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerList Params[[6]] Response[[]] speed time:[2]ms
+2019-07-12 16:26:25 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[6]] Response[User(user_id=6, open_id=null, overage=200.0, nickname=null, head_portrait=null)] speed time:[2]ms
+2019-07-12 16:26:27 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findDealByUserId Params[[6]] Response[[Deal(deal_id=116, user_id=6, content=赠送金额, sum=200.0, time=2019-07-12 16:26:04.0)]] speed time:[16]ms
+2019-07-12 16:26:29 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[6]] Response[User(user_id=6, open_id=null, overage=200.0, nickname=null, head_portrait=null)] speed time:[4]ms
+2019-07-12 16:26:45 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getTask Params[[5]] Response[[Task(task_id=93, user_id=5, status=发布成功, claim=111, bounty=1.0, total_bounty=1.0, red=0, total_red=1, partner=0, total_partner=1, time=2019-07-12 16:17:43.0)]] speed time:[10]ms
+2019-07-12 16:26:45 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerList Params[[5]] Response[[]] speed time:[3]ms
+2019-07-12 16:26:46 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getOneTask Params[[93]] Response[Task(task_id=93, user_id=5, status=发布成功, claim=111, bounty=1.0, total_bounty=1.0, red=0, total_red=1, partner=0, total_partner=1, time=2019-07-12 16:17:43.0)] speed time:[3]ms
+2019-07-12 16:26:46 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerExamine Params[[93]] Response[[]] speed time:[1]ms
+2019-07-12 16:26:56 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[6]] Response[User(user_id=6, open_id=null, overage=200.0, nickname=null, head_portrait=null)] speed time:[2]ms
+2019-07-12 16:27:38 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getTask Params[[5]] Response[[Task(task_id=93, user_id=5, status=发布成功, claim=111, bounty=1.0, total_bounty=1.0, red=0, total_red=1, partner=0, total_partner=1, time=2019-07-12 16:17:43.0)]] speed time:[3]ms
+2019-07-12 16:27:38 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController getPartnerList Params[[5]] Response[[]] speed time:[2]ms
+2019-07-12 16:27:44 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[5]] Response[User(user_id=5, open_id=null, overage=199.0, nickname=null, head_portrait=null)] speed time:[2]ms
+2019-07-12 16:27:52 DEBUG [cn.xiaoandx.commons.log.AspectLog]:40 - cn.xiaoandx.user.controller.UserController findUserById Params[[5]] Response[User(user_id=5, open_id=null, overage=199.0, nickname=null, head_portrait=null)] speed time:[2]ms
+2019-07-12 16:28:52  INFO [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext]:989 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d9a91: startup date [Fri Jul 12 16:14:47 CST 2019]; root of context hierarchy
+2019-07-12 16:28:52  INFO [org.springframework.context.support.DefaultLifecycleProcessor]:366 - Stopping beans in phase 2147483647
+2019-07-12 16:28:52  INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter]:452 - Unregistering JMX-exposed beans on shutdown
+2019-07-12 16:28:52  INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter]:183 - Unregistering JMX-exposed beans
+2019-07-12 16:28:52  INFO [com.zaxxer.hikari.HikariDataSource]:381 - HikariPool-1 - Shutdown initiated...
+2019-07-12 16:28:52  INFO [com.zaxxer.hikari.HikariDataSource]:383 - HikariPool-1 - Shutdown completed.

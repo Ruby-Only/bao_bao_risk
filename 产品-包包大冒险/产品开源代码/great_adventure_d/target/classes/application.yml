@@ -1,0 +1,49 @@
+sys:
+  version: 1.0.0
+weixings:
+  appId: wx5a2aa7aafc630e70
+  appSecurity: 4b22fe541a1921baeae7d991c15b95ed
+#qinliu: 
+#  accessKey: 7mYw774OhImScvEks6XR3TAtSp87P68_oiUbfcMb
+#  secretKey: fJUdt_T7pX_Vib-Y-BlpKtl2JT7tet1xl2PDq8O2
+#  bucket: xiaoandx
+  
+logging.level.cn.xiaoandx: DEBUG
+
+
+
+
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/great_adventure_db?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF8&useSSL=false&rewriteBatchedStatements=true&serverTimezone=UTC
+    username: root
+    password: liuwenlong
+    hikari:
+      auto-commit: false
+      minimum-idle: 2
+      maximum-pool-size: 10
+      connection-timeout: 10000
+      max-lifetime: 600000
+      idle-timeout: 60000
+      validation-timeout: 1000
+      leak-detection-threshold: 30000
+      
+pagehelper:
+    helperDialect: Mysql
+    reasonable: true
+    supportMethodsArguments: true
+    pageSizeZero: true
+    params: count=countSql      
+      
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: C:/log/hello/yml
+      pattern: '%h %l %u [%{yyyy-MM-dd HH:mm:ss.SSS}t] "%r" %s %b %D'
+      prefix: hello_access
+      suffix: .log
+    basedir: C:/log/hello/tomcat
